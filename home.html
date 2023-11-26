@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/logo-chess-game-and-knights-chess-figures-for-chess-strategy-board-game-vector.jpg" style="height: 50px; width: 50px;">
+        </div>
+        <nav class="menue">
+            <ul>
+                <li> <a href="Home">Home</a></li>
+                
+                <li> <a href="Home">Books</a></li>
+                <label for="games"> Games played</label>
+                <select id="games" onchange="navigate()">
+                    <option value="default" selected>Grand masters</option>
+                    <option>Magnus Carlson</option>
+                    <option>Hikaru nakamura</a></option>
+                </select>
+                <label for="openings">Choose an opening:</label>
+                <select name="openings" id="openings">
+                    <option value="default" selected><a href="">openings</option>
+                    <option value="op1"><a href="">King's opening</option>
+                    <option value="op1"><a href="">Queen's opening</option>
+                    <option value="op1"><a href="">double pawn opening</option>
+                  </select>
+                  <label for="defences">Choose a defence:</label>
+                  <select id="defences">
+                    <option selected>defence</option>
+                    <option value="op1"><a href="">french defence</option>
+                    <option value="op1"><a href="">cissilian defence</option>
+                    <option value="op1"><a href="">king's indian defence</option>
+                  </select>   
+                  <script>
+                    function navigate() {
+                      var selectedValue = document.getElementById("games").value;
+                      if (selectedValue !== "default") {
+                        window.location.href = selectedValue + ".html";
+                      }
+                    }
+                  </script>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

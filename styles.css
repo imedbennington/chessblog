@@ -1,0 +1,47 @@
+body{
+    background: linear-gradient(to left, black,50%, white);
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.menue{
+    margin-left: auto;
+}
+.menue ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menue li{
+    margin-right: 20px;
+}
+.menue a {
+    text-justify: auto;
+    padding: 5px 10px;
+    font-size: x-large;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    flex-wrap: wrap; /* Allow items to wrap onto new line */
+  }
+
+  nav a {
+    color: rgb(222, 211, 211);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+  }
+  select {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: x-large;
+}
+select option{
+    font-size: x-large;
+}
+  
